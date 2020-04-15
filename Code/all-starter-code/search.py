@@ -32,7 +32,7 @@ def binary_search(array, item):
     # implement binary_search_iterative and binary_search_recursive below, then
     # change this to call your implementation to verify it passes all tests
     # return binary_search_iterative(array, item)
-    return binary_search_recursive(array, item, left=None, right=None)
+    return binary_search_recursive(array, item, left=0, right=len(array)-1)
 
 
 def binary_search_iterative(array, item):
