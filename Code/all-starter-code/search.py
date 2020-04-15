@@ -36,7 +36,6 @@ def binary_search(array, item):
 
 
 def binary_search_iterative(array, item):
-    # TODO: implement binary search iteratively here
     # once implemented, change binary_search to call binary_search_iterative
     # to verify that your iterative implementation passes all tests
     #find the middle position/item
