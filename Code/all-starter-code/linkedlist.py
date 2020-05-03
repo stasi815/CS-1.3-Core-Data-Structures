@@ -56,7 +56,7 @@ class LinkedList(object):
 
     def length(self):
         """Return the length of this linked list by traversing its nodes.
-        Best and worst case running time: ??? under what conditions? [TODO]"""
+        Best and worst case running time: ??? under what conditions? O(n) because it needs to loop through the number of items in the list."""
         # Node counter initialized to zero
         node_count = 0
         # Start at the head node
@@ -143,9 +143,14 @@ class LinkedList(object):
         using the same node, or raise ValueError if old_item is not found.
         Best case running time: ??? under what conditions? [TODO]
         Worst case running time: ??? under what conditions? [TODO]"""
-        # TODO: Find the node containing the given old_item and replace its
+        node = self.head
+        while node is not None:
+            if node.data == old_item:
+                node.data = new_item
+                return
+            else:
+                node = next.node
         # data with new_item, without creating a new node object
-        pass
 
     def delete(self, item):
         """Delete the given item from this linked list, or raise ValueError.
