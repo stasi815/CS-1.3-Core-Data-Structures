@@ -19,8 +19,8 @@ def is_palindrome(text):
         if character in string.ascii_letters:
             new_text += character
 
-    return is_palindrome_iterative(new_text)
-    # return is_palindrome_recursive(text)
+    # return is_palindrome_iterative(new_text)
+    return is_palindrome_recursive(new_text)
 
 
 def is_palindrome_iterative(text):

@@ -20,7 +20,6 @@ def decode(digits, base):
 
     # Decode digits from any base (2 up to 36)
     # for each digit, use the position or the index an the base to digit * base ** index
-    # 1. get each digit individually
 
     decimal_num = 0
     digits = digits[::-1]
